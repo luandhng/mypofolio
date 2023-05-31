@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/froml/.nuget/packages/": {}
+    "/Users/l/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/froml/repos/cs-practice/csprac/csprac.csproj",
+      "projectUniqueName": "/Users/l/repos/cs-practice/csprac/csprac.csproj",
       "projectName": "csprac",
-      "projectPath": "/Users/froml/repos/cs-practice/csprac/csprac.csproj",
-      "packagesPath": "/Users/froml/.nuget/packages/",
-      "outputPath": "/Users/froml/repos/cs-practice/csprac/obj/",
+      "projectPath": "/Users/l/repos/cs-practice/csprac/csprac.csproj",
+      "packagesPath": "/Users/l/.nuget/packages/",
+      "outputPath": "/Users/l/repos/cs-practice/csprac/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/froml/.nuget/NuGet/NuGet.Config"
+        "/Users/l/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/froml/.dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }
