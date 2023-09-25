@@ -10,9 +10,9 @@ import Head from "next/head";
 import { api } from "~/utils/api";
 
 export default function Home() {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
   const user = useUser();
+
+  const { data } = api.posts.getAll.useQuery();
 
   return (
     <>
@@ -25,10 +25,10 @@ export default function Home() {
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           {!user.isSignedIn && <SignIn />}
           {!!user.isSignedIn && <SignOutButton />}
+        </div>
 
-          <p className="text-2xl text-white">
-            {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-          </p>
+        <div>
+          {data?.map((post) => <div key={post.id}>{post.content}</div>)}
         </div>
       </main>
     </>
