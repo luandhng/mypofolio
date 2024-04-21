@@ -19,7 +19,9 @@ export const Topics = ({ notes }: TopicsProps) => {
   return (
     <div className="col-span-2 border-r border-neutral-400">
       <button
-        onClick={() => addData({ topic: "", notes: "" })}
+        onClick={() =>
+          addData({ this_topic: crypto.randomUUID(), topic: "", notes: "" })
+        }
         className="p-3 border-b bg-neutral-200 font-semibold border-neutral-400 w-full"
       >
         Add a topic
@@ -31,7 +33,7 @@ export const Topics = ({ notes }: TopicsProps) => {
             key={index}
             className={`${
               selectedTopic === item.topic && "bg-neutral-200"
-            } border-b flex items-center justify-between border-neutral-400 hover:bg-neutral-200 p-3`}
+            } border-b cursor-pointer select-none flex items-center justify-between border-neutral-400 hover:bg-neutral-200 p-3`}
           >
             <p>{item.topic}</p>
 
