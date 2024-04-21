@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "",
   appleWebApp: {
     title: "Tools",
-    statusBarStyle: "black-translucent",
+    statusBarStyle: "black",
   },
   itunes: {
     appId: "myAppStoreID",
