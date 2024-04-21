@@ -22,7 +22,7 @@ export const Topics = ({ notes }: TopicsProps) => {
   }, []);
 
   return (
-    <div className="col-span-2 border-r border-neutral-400">
+    <div className="col-span-2 border-r bg-white border-neutral-400">
       {/* For Mobile */}
       <button
         onClick={() => setShowTopics(!showTopics)}
