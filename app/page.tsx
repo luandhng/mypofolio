@@ -16,9 +16,23 @@ export default async function Home() {
   return (
     <main className="h-full flex items-center justify-center">
       <form className="flex flex-col gap-1">
-        <input id="email" name="email" type="email" required />
-        <input id="password" name="password" type="password" required />
-        <button formAction={login}>Log in</button>
+        <input
+          className="border"
+          id="email"
+          name="email"
+          type="email"
+          required
+        />
+        <input
+          className="border"
+          id="password"
+          name="password"
+          type="password"
+          required
+        />
+        <button className="border" formAction={login}>
+          Log in
+        </button>
       </form>
     </main>
   );
