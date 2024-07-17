@@ -20,7 +20,13 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.geofencingapp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show relevant content based on your location.",
+        "NSLocationAlwaysUsageDescription": "We need your location to track your movements and provide personalized services.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "We need your location to track your movements and provide personalized services."
+      }
     },
     "android": {
       "adaptiveIcon": {
