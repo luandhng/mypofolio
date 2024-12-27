@@ -6,7 +6,7 @@ import { Data } from "./data/data";
 function App() {
   return (
     <>
-      <div className="flex flex-col max-w-xl mx-auto py-10 gap-3">
+      <div className="flex flex-col max-w-xl mx-auto lg:py-10 gap-3 max-lg:p-4">
         {Data.map((item) => (
           <Category key={item.title} text={item.title}>
             {item.content.map((child) => (
